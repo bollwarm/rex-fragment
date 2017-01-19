@@ -40,3 +40,19 @@ append_if_no_such_line "/etc/sudoers", "$userId ALL=(ALL) ALL";
 say connection->server;
 
 };
+
+# list all users for sys
+# 列出系统所有用户 
+
+
+task "list_user", group =>"all", sub {
+
+   my @a=user_list();
+   say connection->server. ":@a";
+ };
+
+task "lastlog", group => "all", sub {
+  my $time= run "lastlog|grep -v 'Never logged in'";
+  say connection->server.": $time";
+};
+
