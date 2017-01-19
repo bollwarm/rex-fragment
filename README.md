@@ -8,8 +8,10 @@
 ### rex自动管理平台地址
 
   (web)[http://rexify.org] 
-  (中文web)[http://rex.perlchina.org]
-  （github项目)[https://github.com/RexOps/Rex]
+ 
+ (中文web)[http://rex.perlchina.org]
+  
+（github项目)[https://github.com/RexOps/Rex]
 
 ## rex 使用方法
   
