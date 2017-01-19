@@ -1,0 +1,44 @@
+
+# the iptables rules
+
+task "ipf", group => "all", sub {
+my $output= run 'iptables-save';
+say connection->server.": $output";
+};
+
+# save rules to files 
+
+task "ipv", group => "all", sub {
+my $output= run 'service iptables save';
+say connection->server.": $output";
+};
+
+# add some ip open for sshd (port for 22)
+
+
+task "ipc", group => "all", sub {
+
+my $myport="22";
+
+my @ip=qw(192.168.1.2  192.168.1.0 );
+
+ for(@ip)
+{
+   iptables I=>"INPUT", s => "$_",p=>'tcp',dport=>"$myport",j => 'ACCEPT';
+}
+
+};
+
+# delete rules and save the rules to files
+
+task "ipd", group => "all", sub {
+
+say connection->server." ipd begin";
+run 'iptables -DINPUT -p tcp -m state --state NEW -m multiport --dports 6379,22 -j ACCEPT';
+run 'service iptables save';
+say connection->server." ipd end";
+
+};
+
+
+
