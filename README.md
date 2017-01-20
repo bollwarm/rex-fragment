@@ -1,23 +1,25 @@
 ##rex-fragment
 
 
- rex-fragment  - rex function fragment! .
+rex-fragment  - rex function fragment! .
 
   rex自动运维平台的功能小集合。
 
-### rex自动管理平台地址
+##  rex自动管理平台地址
 
-  (web)[http://rexify.org] 
+[Rex web](http://rexify.org) 
  
- (中文web)[http://rex.perlchina.org]
+[中文web](http://rex.perlchina.org)
   
-（github项目)[https://github.com/RexOps/Rex]
+[github项目](https://github.com/RexOps/Rex)
+
+[QQ群] 252744726
 
 ## rex 使用方法
   
    http://ijz.me/?tag=rex
 
-##LICENSE AND COPYRIGHT
+## LICENSE AND COPYRIGHT
 
 Copyright (C) 2016 ORANGE
 
