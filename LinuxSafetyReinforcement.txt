@@ -42,6 +42,7 @@ say connection->server." done!";
  };
 
 ## option the sshd login speed
+## 优化sshd登陆速度
 
 task "sshdOP",group =>"all", sub {
 
