@@ -8,5 +8,18 @@ use Rex -feature => ['disable_strict_host_key_checking'];
 
 set connection => 'OpenSSH';
 my $myport="22";
+user "root"
+passwd 'heloopl@dde\d';
+port $myport;
+# using environment, the parameters of globe must difined be head of environment;
+# 使用环境来定一些和默认情况下不同的全局变量，需要指出的时候，如果你定义环境，
+##则默认全局变量必须位于次环境定义的前面。
 
-
+environment test => sub {
+  user "root";
+  password "b0x";
+  port "8221";
+  group frontend   => "fe01.test";
+  group middleware => "mw01.test";
+  group dbwrite    => "dbm01.test";
+}
