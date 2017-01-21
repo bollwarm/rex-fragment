@@ -1,0 +1,12 @@
+use Rex -base;
+use Rex::Group::Lookup::INI;
+use Rex::Commands::User;
+use Rex::Commands::Iptables;
+use Data::Dumper;
+use MIME::Base64;
+use Rex -feature => ['disable_strict_host_key_checking'];
+
+set connection => 'OpenSSH';
+my $myport="22";
+
+
