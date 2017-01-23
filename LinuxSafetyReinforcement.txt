@@ -21,6 +21,7 @@ say connection->server.":upate success!";
 };
 
 # sshd reinforcement
+# sshd 加固
 
 task "sshd",group =>"all", sub {
 

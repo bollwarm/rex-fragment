@@ -12,9 +12,6 @@ password => 'yy123';
 say connection->server.” done!”;
 };
 
-# adduser
-# 创建或者修改用户
-
 # butchuser
 # 添加多个账号，并增加证书，增加sudo权限
 
