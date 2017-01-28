@@ -22,6 +22,5 @@ rex-fragment  - rex function fragment! .
 ## LICENSE AND COPYRIGHT
 
 Copyright (C) 2016 ORANGE
-
 This program is released under the following license: Perl
 
