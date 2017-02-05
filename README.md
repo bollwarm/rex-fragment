@@ -3,7 +3,7 @@
 
 rex-fragment  - rex function fragment! .
 
-  rex自动运维平台的功能小集合。
+rex自动运维平台的功能小集合。
 
 ##  rex自动管理平台地址
 
