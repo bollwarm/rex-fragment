@@ -15,6 +15,11 @@ rex自动运维平台的功能小集合。
 
 [QQ群] 252744726
 
+## 内容说明
+
+[rex执行相关](rexCMD.md)
+
+
 ## rex 使用方法
   
    http://ijz.me/?tag=rex
