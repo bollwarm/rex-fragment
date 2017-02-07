@@ -18,7 +18,7 @@ rex自动运维平台的功能小集合。
 ## 内容说明
 
 [rex执行相关](rexCMD.md)
-
+[主机安全加固](LinuxSafetyReinforcement.md)
 
 ## rex 使用方法
   
