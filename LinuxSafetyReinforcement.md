@@ -29,16 +29,11 @@
       say connection->server." begin!";
      
       append_if_no_such_line "/etc/ssh/sshd_config", "PermitRootLogin no";
-     
-#### Start certificate and forbident passwd login，You must add your key to object host。
-     
-#### 启用证书登陆，禁止密码登陆，你需要先添加好证书在做此项加固 
-        
-###delete_lines_matching "/etc/ssh/sshd_config" => "PasswordAuthentication no";
-###append_if_no_such_line "/etc/ssh/sshd_config", "PasswordAuthentication yes";
-     
+      #Start certificate and forbident passwd login，You must add your key to object host。
+      # 启用证书登陆，禁止密码登陆，你需要先添加好证书在做此项加固 
+      #delete_lines_matching "/etc/ssh/sshd_config" => "PasswordAuthentication no";
+      #append_if_no_such_line "/etc/ssh/sshd_config", "PasswordAuthentication yes";
       service sshd => "restart";
-     
      say connection->server." done!";
      
       };
