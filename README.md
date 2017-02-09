@@ -11,7 +11,7 @@ rex自动运维平台的功能小集合。
 
 [主机安全加固](LinuxSafetyReinforcement.md)
 
-[账号管理]
+[账号管理](Usermanage.md)
 
 [防火墙管理]
 
@@ -25,10 +25,6 @@ rex自动运维平台的功能小集合。
 
 [QQ群] 252744726
 
-## 内容说明
-
-[rex执行相关](rexCMD.md)
-[主机安全加固](LinuxSafetyReinforcement.md)
 
 ## rex 使用方法
   
