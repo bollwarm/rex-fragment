@@ -13,7 +13,11 @@ rex自动运维平台的功能小集合。
 
 [账号管理](Usermanage.md)
 
-[防火墙管理]
+[防火墙管理](Iptables.md)
+
+[Rexfile文件范例](Rexfile.example)
+
+[外面程序调用的例子（延时不同端口，不同账号的情况下使用）]
 
 ##  rex自动管理平台地址
 
