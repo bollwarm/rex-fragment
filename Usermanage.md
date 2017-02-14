@@ -1,6 +1,6 @@
 ## 主机账号管理 Usermanage
      
-### adduser
+### add user
 ### 创建或者修改用户
      
      task "create-user",group => "all", sub {
@@ -13,7 +13,7 @@
      say connection->server.” done!”;
      };
      
-### butchuser
+### butch add user
 ### 添加多个账号，并增加证书，增加sudo权限
      
      task "butchuser", group => "all", sub {
@@ -39,7 +39,7 @@
      
      };
      
-### list all users for sys
+### list all users of hosts
 ### 列出系统所有用户 
      
      
