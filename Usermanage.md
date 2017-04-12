@@ -53,4 +53,20 @@
        my $time= run "lastlog|grep -v 'Never logged in'";
        say connection->server.": $time";
      };
+
+### delete User
+### 删除账号
+
+task "userdel",group =>"all", sub {
+    say connection->server." del user begin:";
+my $user='test';
+
+ delete_user $user, {
+ delete_home => 1,
+ force     => 1,
+ };
+
+  delete_lines_matching "/etc/sudoers" => "$user ALL=(ALL) ALL";
+    say connection->server." del user  success!";
+ };
      
