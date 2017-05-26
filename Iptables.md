@@ -29,7 +29,8 @@
     {
        iptables I=>"INPUT", s => "$_",p=>'tcp',dport=>"$myport",j => 'ACCEPT';
     }
-    
+   
+    run 'service iptables save'; 
     };
     
 ### delete rules and save the rules to files
