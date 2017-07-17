@@ -1,6 +1,7 @@
 ## iptables 防火墙管理
 
 ### list the iptables rules
+
 ### 查看目前防火墙规则
 
     task "ipf", group => "all", sub {
@@ -9,6 +10,7 @@
     };
     
 ### save rules to files 
+
 ###保存现有防火墙规则到文件（确保保存时候防火墙规则正常，此操作会覆盖/etc/sysconfig/iptables）
     
     task "ipv", group => "all", sub {
@@ -17,6 +19,7 @@
     };
     
 ### add some ip open for sshd (port for 22)
+
 ### 批量开放IP地址的sshd访问
     
     task "ipc", group => "all", sub {
@@ -34,6 +37,7 @@
     };
     
 ### delete rules and save the rules to files
+
 ### 删除防火墙规则中的一条
     
     task "ipd", group => "all", sub {
