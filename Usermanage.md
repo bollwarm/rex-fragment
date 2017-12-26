@@ -56,7 +56,7 @@
 
 ### delete User
 ### 删除账号
-
+````
 task "userdel",group =>"all", sub {
     say connection->server." del user begin:";
 my $user='test';
@@ -69,4 +69,38 @@ my $user='test';
   delete_lines_matching "/etc/sudoers" => "$user ALL=(ALL) ALL";
     say connection->server." del user  success!";
  };
-     
+ ``````
+### Change Passwd of User
+### 修改密码（支持批量）
+
+`````     
+task "chpass", group => "all", sub {
+
+upload "passwd", "/root/passwd";
+my $output= run 'chpasswd < /root/passwd';
+   run "rm -f /root/passwd";
+say connection->server.": $output";
+
+};
+````
+
+The format of passwd likes:
+
+````
+xx00:zddddUlLn@!
+00xx:ddddd
+user:passwd
+````
+
+### Change expired time of User
+### 修改用户过期
+
+`````     
+task "chpass", group => "all", sub {
+
+my $userId="xxx00";
+my $output=run "chage -M 999 $userId";
+say connection->server.": $output";
+
+};
+````
